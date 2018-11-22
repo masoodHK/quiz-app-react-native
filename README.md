@@ -13,8 +13,12 @@ Once that is done, type the following commands in the terminal
 
 ```
     cd quiz-app-rn
-    npm start
+    npm install
 ```
+
+## Run the app
+
+To start the app, use `npm start` to run a local server to test the app.
 
 If you have `expo-cli` installed, then `npm start` can be replaced by `expo start`
 
