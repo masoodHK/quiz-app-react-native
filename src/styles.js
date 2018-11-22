@@ -17,9 +17,37 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    questionsContainer: {
+        flex: 1,
+        backgroundColor: colors.darkBackground,
+        padding: 10
+    },
     headings: {
         color: addtionalColors.white,
-        fontSize: 30
+        fontSize: 35
+    },
+    questions: {
+        color: colors.darkBackground,
+        fontSize: 22
+    },
+    question: {
+        marginVertical: 15,
+        padding: 5,
+        backgroundColor: colors.secondary    
+    },
+    button: {
+        margin: 20,
+        width: "90%"
+    },
+    input: {
+        padding: 10,
+        marginVertical: 10,
+        backgroundColor: addtionalColors.white + 'aa',
+        color: "black"
+    },
+    resultText: {
+        color: addtionalColors.white,
+        fontSize: 20
     }
 });
 

@@ -3,23 +3,26 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from './HomeScreen'
 import QuestionsScreen from './QuestionsScreen'
 import CameraScreen from './CameraScreen'
+import ResultScreen from './ResultScreen'
 
 const mainStack = createStackNavigator({
   Home: {
     screen: HomeScreen,
-    headerMode: "none"
   },
   Questions: { 
     screen: QuestionsScreen,
-    headerMode: "none"
   },
   Camera: { 
     screen: CameraScreen,
-    headerMode: "none"
+  },
+  Result: {
+    screen: ResultScreen
   }
 }, {
     initialRouteName: "Camera",
-    resetOnBlur: true
+    navigationOptions: {
+      header: null
+    }
 });
 
 export default createAppContainer(mainStack);
